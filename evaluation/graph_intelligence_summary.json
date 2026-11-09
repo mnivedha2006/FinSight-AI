@@ -1,8 +1,8 @@
 {
   "total_nodes": 3000,
-  "total_edges": 4995,
-  "potential_mule_hubs_identified": 79,
+  "total_edges": 3864,
+  "potential_mule_hubs_identified": 154,
   "large_connected_clusters": 1,
-  "max_in_degree": 10,
-  "max_out_degree": 15
+  "max_in_degree": 42,
+  "max_out_degree": 12
 }

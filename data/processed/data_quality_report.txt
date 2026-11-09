@@ -6,30 +6,31 @@ Accounts: 1000
 Beneficiaries: 2000
 Transactions: 5000
 Messages: 5000
-Fraud Cases: 250
+Fraud Cases: 178
 
 2. DUPLICATES:
 Duplicate transaction IDs: 0
 Duplicate account IDs: 0
 
 3. MISSING VALUES (Null counts):
-transaction_id          0
-timestamp               0
-sender_id               0
-receiver_id             0
-amount                  0
-transaction_type        0
-payment_channel         0
-device_id               0
-location_id             0
-sender_balance          0
-account_age_days        0
-beneficiary_age_days    0
-txn_velocity_1h         0
-txn_velocity_24h        0
-is_new_beneficiary      0
-is_fraud                0
-fraud_type              0
+transaction_id             0
+timestamp                  0
+sender_id                  0
+receiver_id                0
+amount                     0
+transaction_type           0
+payment_channel            0
+device_id                  0
+location_id                0
+sender_balance             0
+account_age_days           0
+beneficiary_age_days       0
+txn_velocity_1h            0
+txn_velocity_24h           0
+is_new_beneficiary         0
+is_fraud                   0
+fraud_type                 0
+scenario_id             4630
 dtype: int64
 
 4. REFERENTIAL INTEGRITY:

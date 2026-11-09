@@ -1,18 +1,18 @@
 {
   "isolation_forest": {
-    "accuracy": 0.926,
-    "precision": 0.21428571428571427,
-    "recall": 0.18,
-    "f1_score": 0.1956521739130435,
-    "pr_auc": 0.2292606411394878,
-    "false_positive_rate": 0.034736842105263156
+    "accuracy": 0.976,
+    "precision": 0.76,
+    "recall": 0.76,
+    "f1_score": 0.76,
+    "pr_auc": 0.8282364468547929,
+    "false_positive_rate": 0.01263157894736842
   },
   "rule_baseline": {
-    "accuracy": 0.501,
-    "precision": 0.06407766990291262,
-    "recall": 0.66,
-    "f1_score": 0.1168141592920354,
+    "accuracy": 0.881,
+    "precision": 0.2958579881656805,
+    "recall": 1.0,
+    "f1_score": 0.45662100456621,
     "pr_auc": 0.0,
-    "false_positive_rate": 0.5073684210526316
+    "false_positive_rate": 0.12526315789473685
   }
 }
