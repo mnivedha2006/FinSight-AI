@@ -1,0 +1,1001 @@
+message,true_label,predicted_label,scam_probability,rule_score
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category Normal,0,0,0.003949809477479697,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category collect scam,1,1,0.996421023369881,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category impersonation,1,1,0.9961211719214337,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
+Sample payment notification text for category phishing,1,1,0.996031769767445,0
