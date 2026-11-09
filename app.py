@@ -23,7 +23,8 @@ MODEL_DIR = BASE_DIR / "models"
 # Re-tune after retraining the message classifier on realistic data.
 ML_WEIGHT, RULE_WEIGHT = 0.5, 0.5
 
-st.set_page_config(page_title="FinSight AI", page_icon="F", layout="wide")
+st.set_page_config(page_title="FinSight AI", page_icon="F", layout="wide",
+                   initial_sidebar_state="expanded")
 
 # ----------------------------------------------------------------- themes
 THEMES = {
@@ -78,7 +79,8 @@ CSS = """
 @import url('https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;600;700;800&display=swap');
 .stApp, .stApp h1, .stApp h2, .stApp h3, .stApp p, .stApp label, .stApp textarea, .stApp button,
 .stApp input, .fs, .fs *{font-family:'Schibsted Grotesk',system-ui,-apple-system,'Segoe UI',sans-serif;}
-.fs{font-variant-numeric:tabular-nums;color:var(--text);}
+.fs{font-variant-numeric:normal;color:var(--text);}
+table.ledger td.r, .ev .num, .delta{font-variant-numeric:tabular-nums;}
 
 /* themed canvas */
 .stApp{color:var(--text);background-color:var(--bg);
@@ -88,7 +90,11 @@ CSS = """
  background-size:auto, auto, 26px 26px;background-attachment:fixed;}
 [data-testid="stAppViewContainer"], [data-testid="stMain"]{background:transparent;}
 header[data-testid="stHeader"]{background:transparent;}
-#MainMenu, footer, [data-testid="stToolbar"]{visibility:hidden;}
+#MainMenu, footer, .stDeployButton, [data-testid="stToolbarActions"], [data-testid="stMainMenu"]{display:none !important;}
+[data-testid="stExpandSidebarButton"], [data-testid="stSidebarCollapsedControl"], [data-testid="collapsedControl"]{
+ visibility:visible !important;opacity:1 !important;}
+[data-testid="stExpandSidebarButton"] *, [data-testid="stSidebarCollapsedControl"] *, [data-testid="collapsedControl"] *{
+ color:var(--text) !important;fill:var(--text) !important;}
 .block-container{padding-top:2.2rem;max-width:1180px;}
 .stApp p, .stApp label, [data-testid="stMarkdownContainer"] p{color:var(--text);}
 [data-testid="stCaptionContainer"]{color:var(--mute);}
