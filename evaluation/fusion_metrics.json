@@ -1,0 +1,100 @@
+{
+  "test_size": 1000,
+  "test_fraud": 50,
+  "fusion_threshold_probability": 0.42,
+  "single_signal_thresholds": {
+    "Behaviour only": 95.0,
+    "Message only": 39.0,
+    "Network only": 15.0
+  },
+  "weights": {
+    "Behaviour": 3.559,
+    "Message": 5.585,
+    "Network": 9.239
+  },
+  "intercept": -5.538,
+  "test_metrics": {
+    "Behaviour only": {
+      "precision": 0.649,
+      "recall": 0.74,
+      "f1_score": 0.692,
+      "pr_auc": 0.628,
+      "false_positive_rate": 0.021
+    },
+    "Message only": {
+      "precision": 0.778,
+      "recall": 0.28,
+      "f1_score": 0.412,
+      "pr_auc": 0.369,
+      "false_positive_rate": 0.004
+    },
+    "Network only": {
+      "precision": 0.885,
+      "recall": 0.92,
+      "f1_score": 0.902,
+      "pr_auc": 0.952,
+      "false_positive_rate": 0.006
+    },
+    "Fusion": {
+      "precision": 0.889,
+      "recall": 0.96,
+      "f1_score": 0.923,
+      "pr_auc": 0.988,
+      "false_positive_rate": 0.006
+    }
+  },
+  "flag_rate_by_group_on_test": [
+    {
+      "grp": "LEGIT_BURST",
+      "n": 11,
+      "Behaviour only": 0.364,
+      "Message only": 0.0,
+      "Network only": 0.0,
+      "Fusion": 0.0
+    },
+    {
+      "grp": "LEGIT_LARGE",
+      "n": 12,
+      "Behaviour only": 0.333,
+      "Message only": 0.0,
+      "Network only": 0.0,
+      "Fusion": 0.0
+    },
+    {
+      "grp": "new_beneficiary_anomaly",
+      "n": 17,
+      "Behaviour only": 1.0,
+      "Message only": 0.235,
+      "Network only": 0.824,
+      "Fusion": 0.882
+    },
+    {
+      "grp": "ordinary legit",
+      "n": 927,
+      "Behaviour only": 0.013,
+      "Message only": 0.004,
+      "Network only": 0.006,
+      "Fusion": 0.006
+    },
+    {
+      "grp": "rapid_transfer",
+      "n": 20,
+      "Behaviour only": 0.9,
+      "Message only": 0.0,
+      "Network only": 1.0,
+      "Fusion": 1.0
+    },
+    {
+      "grp": "suspicious_collect",
+      "n": 13,
+      "Behaviour only": 0.154,
+      "Message only": 0.769,
+      "Network only": 0.923,
+      "Fusion": 1.0
+    }
+  ],
+  "notes": [
+    "Weights fitted on train, threshold chosen on validation, metrics on test.",
+    "Message scores are out-of-family. Messages are linked to payments by the synthetic generator, so fusion results are optimistic compared with real data."
+  ]
+}
