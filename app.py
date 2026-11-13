@@ -6,6 +6,7 @@ Run:    streamlit run app.py
 import html as H
 import json
 import math
+import sys
 from pathlib import Path
 
 import joblib
@@ -15,6 +16,7 @@ import plotly.graph_objects as go
 import streamlit as st
 
 BASE_DIR = Path(__file__).resolve().parent
+sys.path.insert(0, str(BASE_DIR))
 EVAL_DIR = BASE_DIR / "evaluation"
 SYNTH_DIR = BASE_DIR / "data" / "synthetic"
 PROC_DIR = BASE_DIR / "data" / "processed"
@@ -273,9 +275,19 @@ def load_behaviour():
         return None
 
 
+@st.cache_resource
+def load_engine():
+    try:
+        from intelligence.counterfactual import CounterfactualEngine
+        return CounterfactualEngine(BASE_DIR)
+    except Exception:
+        return None
+
+
 tx_metrics = load_json("model_metrics.json")
 nlp_metrics = load_json("nlp_metrics.json")
 graph_metrics = load_json("graph_intelligence_summary.json")
+fusion_metrics = load_json("fusion_metrics.json")
 fusion = load_csv(EVAL_DIR / "evidence_fusion_report.csv")
 txns = load_csv(SYNTH_DIR / "transactions.csv")
 bens = load_csv(SYNTH_DIR / "beneficiaries.csv")
@@ -598,6 +610,19 @@ elif page == "Investigate a transaction":
             f'<div class="ev"><span>{k}</span><div class="bar"><i style="width:{v*100:.0f}%"></i></div>'
             f'<span class="num">{v*100:.0f}</span></div>' for k, v in ev) + '</div>', unsafe_allow_html=True)
 
+        if "behaviour_contrib" in r.index:
+            section("How much each signal pushed the decision")
+            cs = [("Behaviour", r["behaviour_contrib"]), ("Message", r["message_contrib"]),
+                  ("Network", r["network_contrib"])]
+            mx = max(max(v for _, v in cs), 1e-9)
+            st.markdown('<div class="fs panel">' + "".join(
+                f'<div class="ev"><span>{k}</span><div class="bar"><i style="width:{max(v, 0) / mx * 100:.0f}%"></i></div>'
+                f'<span class="num">{v:+.1f}</span></div>' for k, v in cs) + '</div>', unsafe_allow_html=True)
+            sp = {"train": " This payment was part of the data used to fit the fusion weights.",
+                  "validation": " This payment was used to choose the review threshold.",
+                  "test": " This payment was held out; the fusion model never saw it."}.get(r.get("split", ""), "")
+            fine("Points on the fusion model's log-odds scale. A longer bar means that signal pushed the score up more." + sp)
+
         detail_lines = []
         if len(txns) and "transaction_id" in txns:
             t = txns[txns["transaction_id"] == tid]
@@ -632,77 +657,61 @@ elif page == "Investigate a transaction":
 
 # ====================================================== COUNTERFACTUAL LAB
 elif page == "Counterfactual lab":
-    head("Counterfactual lab", "Change one thing about a payment and see how its behaviour risk responds. "
-                               "The model is re-run on the changed payment; nothing is subtracted by hand.")
-    B = load_behaviour()
-    if B is None:
-        st.info("Needs models/fraud_detector.joblib and data/processed/transaction_features.csv. "
-                "Run Day 2 and Day 3 scripts first.")
+    head("Counterfactual lab", "Change one thing about a payment and re-run the whole fusion. Behaviour, message and "
+                               "network signals are all recomputed; nothing is subtracted by hand.")
+    eng = load_engine()
+    if eng is None:
+        st.info("Needs models/fusion_model.joblib. Run python intelligence/risk_fusion.py first.")
     else:
-        feats, cols, srt = B["feats"], B["cols"], B["sorted"]
-        pct = np.searchsorted(srt, B["anomaly"]) / len(srt) * 100
-        order = np.argsort(-pct)[:60]
-        label = {int(i): f'{feats.iloc[i]["transaction_id"]}  ·  risk {pct[i]:.0f}' for i in order}
-        idx = st.selectbox("Payment (highest behaviour risk first)", list(label), format_func=lambda i: label[i])
-        base = feats.iloc[idx].to_dict()
+        rep = eng.report
+        kinds = {"Highest risk first": None, "Suspicious collect": "suspicious_collect",
+                 "Rapid transfer": "rapid_transfer", "New beneficiary anomaly": "new_beneficiary_anomaly"}
+        a, b = st.columns([1, 2])
+        kind = a.selectbox("Show", list(kinds))
+        pool = rep if kinds[kind] is None else rep[rep["fraud_type"] == kinds[kind]]
+        pool = pool.sort_values("unified_risk_score", ascending=False).head(60)
+        tid = b.selectbox("Payment", pool.index.tolist(),
+                          format_func=lambda i: f"{i}  ·  score {pool.loc[i, 'unified_risk_score'] * 100:.0f}")
+        base_vel = int(max(1, eng.feats.loc[tid].get("txn_velocity_1h", 1)))
 
-        def score_row(row):
-            x = pd.DataFrame([{c: row.get(c, 0) for c in cols}])
-            a = float(-B["mdl"].decision_function(B["imp"].transform(x))[0])
-            return float(np.searchsorted(srt, a) / len(srt) * 100)
-
-        st.markdown('<h3 class="fs sec">What if...</h3>', unsafe_allow_html=True)
+        section("What if...")
         c1, c2, c3, c4 = st.columns(4)
-        known = c1.toggle("Beneficiary is already known", value=False)
-        day = c2.toggle("Paid during the day", value=False)
-        mult = c3.slider("Amount, as share of original", 0.1, 1.5, 1.0, 0.05)
-        vel = c4.slider("Payments in the last hour", 1, 20, int(max(1, base.get("txn_velocity_1h", 1))))
-
-        new = dict(base)
-        changes = []
-        if known:
-            for k in ("is_new_beneficiary", "beneficiary_age_risk"):
-                if k in new and new[k] != 0:
-                    changes.append((k, new[k], 0)); new[k] = 0
-        if day and "night_transaction_flag" in new and new["night_transaction_flag"] != 0:
-            changes.append(("night_transaction_flag", new["night_transaction_flag"], 0)); new["night_transaction_flag"] = 0
-        if abs(mult - 1.0) > 1e-9:
-            for k in ("amount", "balance_depletion_ratio", "amount_vs_account_average"):
-                if k in new:
-                    changes.append((k, new[k], new[k] * mult)); new[k] = new[k] * mult
-            if "amount" in new:
-                if "amount_log" in new:
-                    changes.append(("amount_log", new["amount_log"], math.log1p(new["amount"])))
-                    new["amount_log"] = math.log1p(new["amount"])
-                if "high_amount_flag" in new:
-                    flag = int(new["amount"] > 10000)
-                    if flag != new["high_amount_flag"]:
-                        changes.append(("high_amount_flag", new["high_amount_flag"], flag))
-                    new["high_amount_flag"] = flag
-        if "txn_velocity_1h" in new and vel != new["txn_velocity_1h"]:
-            changes.append(("txn_velocity_1h", new["txn_velocity_1h"], vel)); new["txn_velocity_1h"] = vel
-            if "txn_velocity_24h" in new and new["txn_velocity_24h"] < vel:
-                changes.append(("txn_velocity_24h", new["txn_velocity_24h"], vel)); new["txn_velocity_24h"] = vel
-
-        s0, s1 = score_row(base), score_row(new)
-        d = s1 - s0
+        known = c1.toggle("Beneficiary is already known to the sender", key=f"k_{tid}")
+        est = c2.toggle("Beneficiary is older than 15 days", key=f"e_{tid}")
+        drop = c3.toggle("The scam message was never sent", key=f"m_{tid}")
+        dev = c4.toggle("Sender is not on a shared device", key=f"d_{tid}")
+        d1, d2, d3 = st.columns(3)
+        day = d1.toggle("Paid during the day", key=f"n_{tid}")
+        share = d2.slider("Amount, as share of original", 0.1, 1.5, 1.0, 0.05, key=f"a_{tid}")
+        vel = d3.slider("Payments in the last hour", 1, 20, min(base_vel, 20), key=f"v_{tid}")
+        res = eng.simulate(tid, known=known, established=est, drop_message=drop, clear_device=dev,
+                           amount_share=share, velocity=vel if vel != min(base_vel, 20) else None, daytime=day)
+        b0, a0 = res["before"], res["after"]
+        d = a0["score"] - b0["score"]
         dcol = "var(--lo)" if d < -0.5 else "var(--hi)" if d > 0.5 else "var(--mute)"
-        c0, c1_ = level(s0)[0], level(s1)[0]
+        bd, ad = DECISION[b0["decision"]], DECISION[a0["decision"]]
         st.markdown(
-            f'<div class="fs cmp"><div><div class="lbl">Original</div><div class="bignum {c0}">{s0:.0f}</div></div>'
-            f'<div class="sep"></div><div><div class="lbl">With your changes</div><div class="bignum {c1_}">{s1:.0f}</div></div>'
+            f'<div class="fs cmp"><div><div class="lbl">Original</div><div class="bignum {level(b0["score"])[0]}">'
+            f'{b0["score"]:.0f}</div>{pill(*bd)}</div><div class="sep"></div><div><div class="lbl">With your changes'
+            f'</div><div class="bignum {level(a0["score"])[0]}">{a0["score"]:.0f}</div>{pill(*ad)}</div>'
             f'<div class="delta" style="color:{dcol}">{d:+.0f} points</div></div>', unsafe_allow_html=True)
-        ruler(s0, "Original")
-        ruler(s1, "With your changes")
+        ruler(b0["score"], "Original")
+        ruler(a0["score"], "With your changes")
+        st.markdown(f'<div class="fs note" style="margin-top:14px">{res["summary"]}</div>', unsafe_allow_html=True)
 
-        if changes:
-            section("What changed in the model's inputs")
-            ledger(["Input", "Before", "After"],
-                   [[f"<b>{k}</b>", f"{b:,.3g}", f"{a:,.3g}"] for k, b, a in changes], right=(1, 2))
+        section("Signals before and after")
+        ledger(["Signal", "Before", "After", "Change"],
+               [[f"<b>{n}</b>", f"{b0[k]:.0f}", f"{a0[k]:.0f}", f"{a0[k] - b0[k]:+.0f}"]
+                for k, n in [("B", "Behaviour"), ("M", "Message"), ("N", "Network")]], right=(1, 2, 3))
+        if res["changes"]:
+            section("What changed in the inputs")
+            ledger(["Input", "Before", "After"], [[f"<b>{lab}</b>", f"{x:,.3g}", f"{y:,.3g}"]
+                                                  for lab, x, y in res["changes"]], right=(1, 2))
         else:
-            fine("Adjust a control above to simulate a change.")
-        fine("Behaviour risk is the payment's anomaly rank among all 5,000 payments (100 means more unusual than "
-             "every other payment). Message and network evidence are unchanged in this view.")
+            fine("Switch on a change above to simulate it.")
+        fine("Each what-if edits the payment's inputs, re-runs the behaviour model and network indicators, and passes "
+             "the result through the same fitted fusion weights. The 0-100 scale is a monotone rescaling of the "
+             "model's log-odds in which 40 is the review threshold chosen on validation data.")
 
 # ===================================================== SPENDING INSIGHTS
 elif page == "Spending insights":
@@ -787,6 +796,30 @@ elif page == "Beneficiary network":
 # ======================================================== MODEL RESULTS
 elif page == "Model results":
     head("Model results", "Held-out tests on synthetic data. Treat these as indicative, not real-world accuracy.")
+    tm = fusion_metrics.get("test_metrics", {})
+    if tm:
+        section("Fusion: three signals against each one alone")
+        sig = list(tm)
+        fig = go.Figure()
+        for key, lab, col in [("precision", "Precision", T["grey"]), ("recall", "Recall", T["acc"]),
+                              ("f1_score", "F1", T["mid"])]:
+            fig.add_trace(go.Bar(name=lab, x=sig, y=[tm[n][key] for n in sig], marker_color=col))
+        fig.update_layout(barmode="group", bargap=.3)
+        fig.update_yaxes(range=[0, 1])
+        st.plotly_chart(style_fig(fig, 330))
+        ledger(["Signal", "Precision", "Recall", "F1", "PR-AUC", "False-positive rate"],
+               [[f"<b>{n}</b>", f"{tm[n]['precision']:.3f}", f"{tm[n]['recall']:.3f}", f"{tm[n]['f1_score']:.3f}",
+                 f"{tm[n]['pr_auc']:.3f}", f"{tm[n]['false_positive_rate']:.3f}"] for n in sig], right=(1, 2, 3, 4, 5))
+        groups = fusion_metrics.get("flag_rate_by_group_on_test", [])
+        if groups:
+            section("Share of payments flagged, by kind of payment")
+            cols_ = ["Behaviour only", "Message only", "Network only", "Fusion"]
+            ledger(["Kind of payment", "Payments"] + cols_,
+                   [[f"<b>{g['grp'].replace('_', ' ')}</b>", g["n"]] + [f"{g[c] * 100:.0f}%" for c in cols_]
+                    for g in groups], right=(1, 2, 3, 4, 5))
+        fine(f"Test set: {fusion_metrics.get('test_size', 0)} payments, {fusion_metrics.get('test_fraud', 0)} fraud. "
+             + " ".join(fusion_metrics.get("notes", [])))
+
     iso, rule = tx_metrics.get("isolation_forest", {}), tx_metrics.get("rule_baseline", {})
     if iso and rule:
         st.markdown(

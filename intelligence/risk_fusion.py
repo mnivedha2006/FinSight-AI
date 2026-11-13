@@ -28,6 +28,7 @@ from sklearn.model_selection import GroupKFold, train_test_split
 
 BASE_DIR = Path(__file__).resolve().parents[1]
 sys.path.insert(0, str(BASE_DIR))
+from intelligence.counterfactual import display_score  # noqa: E402
 from intelligence.message_rules import rule_score_text  # noqa: E402
 from models.train_nlp_model import ML_W, RULE_W, build_pipeline  # noqa: E402
 
@@ -78,7 +79,7 @@ def network_scores(tx):
     for i, (s, r) in enumerate(zip(tx["sender_id"], tx["receiver_id"])):
         mates = [m for m in members.get(acc.get(s), []) if m != s]
         ring[i] = float(any(m in payers[r] for m in mates))
-    return 100 * (0.40 * young + 0.35 * hub + 0.25 * ring)
+    return 100 * (0.40 * young + 0.35 * hub + 0.25 * ring), young, hub, ring
 
 
 # ------------------------------------------------------------------- metrics
@@ -95,28 +96,22 @@ def best_threshold(y, score, grid):
     return max(grid, key=lambda t: f1_score(y, (score >= t).astype(int), zero_division=0))
 
 
-def display(p, t):
-    """Rescale probability so the validation-chosen threshold t shows as 40 (review) and the midpoint
-    between t and 1 shows as 70 (block)."""
-    tb = t + (1 - t) / 2
-    return np.where(p < t, 40 * p / t, np.where(p < tb, 40 + 30 * (p - t) / (tb - t), 70 + 30 * (p - tb) / (1 - tb)))
-
-
 def main():
     tx = pd.read_csv(SYN / "transactions.csv")
     print(f"Scoring {len(tx)} payments...")
-    B, M, N = behaviour_scores(tx), message_scores(tx), network_scores(tx)
+    B, M = behaviour_scores(tx), message_scores(tx)
+    N, young, hub, ring = network_scores(tx)
     y = tx["is_fraud"].astype(int).values
     X = np.column_stack([B, M, N]) / 100
 
     idx = np.arange(len(tx))
     tr, rest = train_test_split(idx, test_size=0.4, random_state=SEED, stratify=y)
     va, te = train_test_split(rest, test_size=0.5, random_state=SEED, stratify=y[rest])
-    lr = LogisticRegression(class_weight="balanced", C=1.0, max_iter=1000).fit(X[tr], y[tr])
+    lr = LogisticRegression(class_weight="balanced", C=0.1, max_iter=1000).fit(X[tr], y[tr])
     p = lr.predict_proba(X)[:, 1]
     grid = np.linspace(0.05, 0.95, 91)
     t_fusion = float(best_threshold(y[va], p[va], grid))
-    shown = display(p, t_fusion)
+    shown = display_score(p, t_fusion)
 
     signals = {"Behaviour only": B, "Message only": M, "Network only": N}
     thr = {k: float(best_threshold(y[va], v[va], np.linspace(1, 99, 99))) for k, v in signals.items()}
@@ -142,10 +137,12 @@ def main():
         "fraud_type": tx["fraud_type"], "split": split,
         "transaction_risk_score": (B / 100).round(4), "nlp_risk_score": (M / 100).round(4),
         "graph_risk_score": (N / 100).round(4), "unified_risk_score": (shown / 100).round(4),
-        "fusion_probability": p.round(4), "behaviour_contrib": contrib[:, 0].round(3),
+        "net_young": young, "net_hub": hub.round(4), "net_ring": ring, "fusion_probability": p.round(4), "behaviour_contrib": contrib[:, 0].round(3),
         "message_contrib": contrib[:, 1].round(3), "network_contrib": contrib[:, 2].round(3),
         "system_decision": decision})
     report.to_csv(EVAL / "evidence_fusion_report.csv", index=False)
+    joblib.dump({"coef": lr.coef_[0], "intercept": float(lr.intercept_[0]), "threshold": t_fusion,
+                 "features": names}, MODELS / "fusion_model.joblib")
 
     out = {"test_size": int(len(te)), "test_fraud": int(y[te].sum()), "fusion_threshold_probability": round(t_fusion, 3),
            "single_signal_thresholds": {k: round(v, 1) for k, v in thr.items()},
