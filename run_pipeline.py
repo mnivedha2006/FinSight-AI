@@ -17,6 +17,7 @@ STEPS = [
     ("Message model (TF-IDF + LogReg)", "models/train_nlp_model.py"),
     ("Network graph summary", "graph/build_transaction_graph.py"),
     ("Risk fusion (real, all payments)", "intelligence/risk_fusion.py"),
+    ("Evaluation report", "evaluation/make_report.py"),
 ]
 for i, (label, script) in enumerate(STEPS, 1):
     if not (ROOT / script).exists():

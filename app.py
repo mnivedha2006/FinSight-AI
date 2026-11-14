@@ -6,6 +6,7 @@ Run:    streamlit run app.py
 import html as H
 import json
 import math
+import os
 import sys
 from pathlib import Path
 
@@ -273,6 +274,24 @@ def load_behaviour():
                 "sorted": np.sort(anomaly), "anomaly": anomaly}
     except Exception:
         return None
+
+
+@st.cache_resource
+def load_explainer():
+    try:
+        from intelligence.explainer import Explainer
+        return Explainer(BASE_DIR)
+    except Exception:
+        return None
+
+
+def gemini_key():
+    """Key from Streamlit secrets or the environment. Never hard-code it or commit it."""
+    try:
+        k = st.secrets.get("GEMINI_API_KEY", "")
+    except Exception:
+        k = ""
+    return k or os.environ.get("GEMINI_API_KEY", "")
 
 
 @st.cache_resource
@@ -644,6 +663,25 @@ elif page == "Investigate a transaction":
                 fine(f'Synthetic ground-truth label: {"fraud" if r.get("true_fraud_label", 0) == 1 else "legitimate"}. '
                      'Shown for evaluation only.')
 
+        section("Explanation")
+        explainer = load_explainer()
+        explanation_text = ""
+        if explainer is None:
+            fine("Explanations need data/processed/transaction_features.csv and the fusion report.")
+        else:
+            key = gemini_key()
+            lc, bc = st.columns([1, 2])
+            lang = lc.selectbox("Language", ["English", "Tamil", "Hindi"], key=f"lang_{tid}")
+            skey = f"expl_{tid}_{lang}"
+            if bc.button("Explain with Gemini" if key else "Show rule-based explanation", key=f"btn_{tid}"):
+                with st.spinner("Writing the explanation..."):
+                    st.session_state[skey] = explainer.explain(tid, lang, key or None)
+            res_ex = st.session_state.get(skey) or explainer.explain(tid, "English", None)
+            explanation_text = res_ex["text"]
+            st.markdown(f'<div class="fs note">{H.escape(res_ex["text"])}</div>', unsafe_allow_html=True)
+            fine(f'{pill("lo" if res_ex["source"] == "Gemini" else "na", res_ex["source"])} &nbsp; {H.escape(res_ex["note"])}'
+                 + ("" if key else " Without a key you see the rule-based summary, built only from this payment's evidence."))
+
         section("Case notes")
         notes = st.text_area("Notes", key=f"notes_{tid}", height=90, label_visibility="collapsed",
                              placeholder="What did you check? What should happen next?")
@@ -651,7 +689,7 @@ elif page == "Investigate a transaction":
             ["FINSIGHT AI - CASE REPORT", "=" * 28, f"Transaction: {tid}", f"Decision: {dt}",
              f"Risk score: {score:.0f} / 100 ({level(score)[1]})", f"Amount: {inr(r['amount'])}", "",
              "Evidence (0-100)"] + [f"  {k}: {v*100:.0f}" for k, v in ev] + ["", "Payment details"]
-            + [f"  {d}" for d in detail_lines] + ["", "Investigator notes", notes or "(none)", "",
+            + [f"  {d}" for d in detail_lines] + ["", "Explanation", explanation_text or "(not generated)", "", "Investigator notes", notes or "(none)", "",
              "Prototype on synthetic data. Scores are risk indicators, not proof of fraud."])
         st.download_button("Download case report", report, f"case_{tid}.txt", "text/plain")
 
